@@ -17,6 +17,9 @@
         <action
             android:id="@+id/action_MenuFragment_to_ExImageView"
             app:destination="@id/ExImageView" />
+        <action
+            android:id="@+id/action_MenuFragment_to_ExGallery"
+            app:destination="@id/ExGallery" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -32,5 +35,10 @@
         android:id="@+id/ExImageView"
         android:name="com.example.class2021_2022_2_androiddevelop_course.fragments.ExImageView"
         android:label="ExImageView"
-        tools:layout="@layout/fragment_ex_image_view"/>
+        tools:layout="@layout/fragment_ex_image_view" />
+    <fragment
+        android:id="@+id/ExGallery"
+        android:name="com.example.class2021_2022_2_androiddevelop_course.fragments.ExGallery"
+        android:label="ExGallery"
+        tools:layout="@layout/fragment_ex_gallery" />
 </navigation>

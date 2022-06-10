@@ -16,4 +16,6 @@
     <string name="set_width_and_height">设置第二个ImageView直接使用宽和高设置其大小各自为100</string>
     <string name="imageview1">ImageView1</string>
     <string name="imageview2">ImageView2</string>
+    <string name="button_to_ex_gallery">button_to_ex_gallery</string>
+    <string name="imageview">ImageView</string>
 </resources>
