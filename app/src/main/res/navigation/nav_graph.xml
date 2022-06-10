@@ -23,6 +23,9 @@
         <action
             android:id="@+id/action_MenuFragment_to_ExAlertMessageDialog"
             app:destination="@id/ExAlertMessageDialog" />
+        <action
+            android:id="@+id/action_MenuFragment_to_ExOtherDialogs"
+            app:destination="@id/ExOtherDialogs" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -49,5 +52,11 @@
         android:name="com.example.class2021_2022_2_androiddevelop_course.fragments.ExAlertMessageDialog"
         android:label="ExAlertMessageDialog"
         tools:layout="@layout/fragment_ex_alert_message_dialog" />
+
+    <fragment
+        android:id="@+id/ExOtherDialogs"
+        android:name="com.example.class2021_2022_2_androiddevelop_course.fragments.ExOtherDialogs"
+        android:label="ExOtherDialogs"
+        tools:layout="@layout/fragment_ex_other_dialogs" />
 
 </navigation>

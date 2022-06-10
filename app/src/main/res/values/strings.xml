@@ -20,4 +20,8 @@
     <string name="imageview">ImageView</string>
     <string name="show_message">提示消息</string>
     <string name="button_to_ex_alert_message_dialog">button_to_ex_alert_message_dialog</string>
+    <string name="ProgressDialog">ProgressDialog</string>
+    <string name="date_picker_dialog">DatePickerDialog</string>
+    <string name="time_picker_dialog">TimePickerDialog</string>
+    <string name="button_to_ex_other_dialogs">button_to_ex_other_dialogs</string>
 </resources>
