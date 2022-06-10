@@ -31,13 +31,30 @@ public class ExImageView extends Fragment {
         binding.button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                binding.imageView1.setBackground(ContextCompat.getDrawable(view.getContext(), R.drawable.ic_launcher_background));
+                binding.imageView1.setImageDrawable(ContextCompat.getDrawable(view.getContext(), R.drawable.ic_launcher_background));
             }
         });
         binding.button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                binding.imageView2.setImageDrawable(ContextCompat.getDrawable(view.getContext(), R.drawable.ic_launcher_background));
+                binding.imageView2.setBackground(ContextCompat.getDrawable(view.getContext(), R.drawable.ic_launcher_background));
+            }
+        });
+        binding.button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                binding.imageView1.setMaxHeight(100);
+                binding.imageView1.setMinimumHeight(100);
+                binding.imageView1.setAdjustViewBounds(true);
+            }
+        });
+        binding.button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ViewGroup.LayoutParams layoutParams = binding.imageView2.getLayoutParams();
+                layoutParams.width = 100;
+                layoutParams.height = 100;
+                binding.imageView2.setLayoutParams(layoutParams);
             }
         });
     }

@@ -9,12 +9,14 @@
     <ImageView
         android:id="@+id/image_view1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/imageview1"/>
 
     <ImageView
         android:id="@+id/image_view2"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/imageview2"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -27,5 +29,17 @@
         android:layout_height="wrap_content"
         android:id="@+id/button2"
         android:text="@string/imageview_scr_set_image_view_2image_background"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:text="@string/set_max_min_width_or_height_and_enable_adjust"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        android:text="@string/set_width_and_height"/>
 
 </LinearLayout>

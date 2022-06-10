@@ -10,6 +10,10 @@
     <string name="menu_fragment">menu_fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="imageview_scr_set_image_view_1image_drawable">设置第一个ImageView按照前景显示(Scr)(setImageDrawable())</string>
-    <string name="imageview_scr_set_image_view_2image_background">设置第一个ImageView按照背景显示(background)(setBackgroundDrawable())</string>
+    <string name="imageview_scr_set_image_view_2image_background">设置第二个ImageView按照背景显示(background)(setBackgroundDrawable())</string>
     <string name="button_to_ex_image_view">button_to_ex_image_view</string>
+    <string name="set_max_min_width_or_height_and_enable_adjust">设置第一个ImageView设置其最大宽高为100并开启自适应</string>
+    <string name="set_width_and_height">设置第二个ImageView直接使用宽和高设置其大小各自为100</string>
+    <string name="imageview1">ImageView1</string>
+    <string name="imageview2">ImageView2</string>
 </resources>
