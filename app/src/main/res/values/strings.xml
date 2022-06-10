@@ -24,4 +24,8 @@
     <string name="date_picker_dialog">DatePickerDialog</string>
     <string name="time_picker_dialog">TimePickerDialog</string>
     <string name="button_to_ex_other_dialogs">button_to_ex_other_dialogs</string>
+    <string name="to_activity">to another activity</string>
+    <string name="example_activity">Example Activity</string>
+    <string name="live_for_yourself">Live For Yourself</string>
+    <string name="button_to_ex_to_activity">button_to_ex_to_activity</string>
 </resources>

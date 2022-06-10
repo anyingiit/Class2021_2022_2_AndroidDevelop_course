@@ -65,6 +65,13 @@ public class MenuFragment extends Fragment {
                         .navigate(R.id.action_MenuFragment_to_ExOtherDialogs);
             }
         });
+        binding.buttonToExToActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(MenuFragment.this)
+                        .navigate(R.id.action_MenuFragment_to_ExToActivity);
+            }
+        });
     }
 
     @Override
