@@ -18,4 +18,6 @@
     <string name="imageview2">ImageView2</string>
     <string name="button_to_ex_gallery">button_to_ex_gallery</string>
     <string name="imageview">ImageView</string>
+    <string name="show_message">提示消息</string>
+    <string name="button_to_ex_alert_message_dialog">button_to_ex_alert_message_dialog</string>
 </resources>
