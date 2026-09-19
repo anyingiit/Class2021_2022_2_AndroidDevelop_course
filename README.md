@@ -3,7 +3,9 @@
 
 # Class2021 2022 2 AndroidDevelop Course
 
-Class2021 2022 2 android develop course has no README describing its purpose; its manifest (build.gradle, settings.gradle) marks it as a Java (Gradle) codebase, built with Java.
+A coursework Android app of small Java activities and fragments that demonstrate core UI widgets, including image views, alert and picker dialogs, and Fragment-based navigation between screens.
+
+**English** · [简体中文](README.zh-CN.md)
 
 [![CI](https://github.com/anyingiit/Class2021_2022_2_AndroidDevelop_course/actions/workflows/ci.yml/badge.svg)](https://github.com/anyingiit/Class2021_2022_2_AndroidDevelop_course/actions/workflows/ci.yml)
 [![License](https://img.shields.io/github/license/anyingiit/Class2021_2022_2_AndroidDevelop_course)](LICENSE)
@@ -24,7 +26,7 @@ Class2021 2022 2 android develop course has no README describing its purpose; it
 
 ## About The Project
 
-Class2021 2022 2 android develop course has no README describing its purpose; its manifest (build.gradle, settings.gradle) marks it as a Java (Gradle) codebase, built with Java.
+This repository holds the classroom exercises for an Android development course: a single Android Studio module (`app/build.gradle`) whose `MainActivity` hosts a Jetpack Navigation graph that switches between a menu of fragments. Each fragment isolates one Android UI API on its own screen — a `Gallery`-style image grid (`ExGallery.java`), scaling an `ImageView` two different ways, alert and system dialogs, and starting a second `Activity`.
 
 See the [open issues](https://github.com/anyingiit/Class2021_2022_2_AndroidDevelop_course/issues) for planned features and known issues.
 
@@ -32,20 +34,28 @@ See the [open issues](https://github.com/anyingiit/Class2021_2022_2_AndroidDevel
 
 ### Prerequisites
 
-- Git
+- Android Studio (or the command-line SDK tools) with the Android SDK Platform 32 and matching Build-Tools, the `compileSdk` declared in `app/build.gradle`
+- A device or emulator running Android 9.0 (API 28) or newer, the project's `minSdk` in `app/build.gradle`
+- JDK 11, to run the Gradle 7.3.3 wrapper pinned in `gradle/wrapper/gradle-wrapper.properties`
 
 ### Installation
 
 ```sh
 git clone https://github.com/anyingiit/Class2021_2022_2_AndroidDevelop_course.git
 cd Class2021_2022_2_AndroidDevelop_course
+./gradlew assembleDebug
 ```
+
+This produces an unsigned debug APK under `app/build/outputs/apk/debug/`.
 
 ## Usage
 
 ```sh
-Class2021_2022_2_AndroidDevelop_course --help
+./gradlew installDebug
+adb shell am start -n com.example.class2021_2022_2_androiddevelop_course/.MainActivity
 ```
+
+The app opens on the menu fragment; each button navigates to one exercise fragment, wired up in `app/src/main/res/navigation/nav_graph.xml`.
 
 ## Contributing
 
